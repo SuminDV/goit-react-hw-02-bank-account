@@ -1,0 +1,23 @@
+.controls {
+  width: 100%;
+  /* height: 100px; */
+  background-color: rgb(53, 15, 187);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.controls_input {
+  height: 30px;
+  width: 200px;
+  margin-right: 10px;
+  margin-left: 450px;
+}
+.controls_button {
+  border-style: none;
+  height: 36px;
+  width: 100px;
+  margin-right: 10px;
+  background-color: rgb(98, 98, 255);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}

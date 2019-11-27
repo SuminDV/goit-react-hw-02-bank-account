@@ -1,0 +1,23 @@
+.balanceContainer {
+  display: block;
+
+  width: 500px;
+
+  margin: 0 auto;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgb(19, 0, 128);
+  font-weight: bold;
+  text-align: center;
+}
+.balanceContainer span {
+  margin-right: 10px;
+}
+
+.span1 {
+  color: green;
+}
+.span2 {
+  color: red;
+}
