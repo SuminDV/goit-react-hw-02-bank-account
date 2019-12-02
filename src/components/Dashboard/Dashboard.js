@@ -22,7 +22,7 @@ class Dashboard extends Component {
   };
 
   withdrawOn = () => {
-    if (+this.state.amount < +this.state.balance) {
+    if (+this.state.amount <= +this.state.balance) {
       this.setState(state => ({
         balance: state.balance - state.amount,
       }));
@@ -63,7 +63,18 @@ class Dashboard extends Component {
   };
 
   render() {
-    const { deposit, balance, withdrow, transactions } = this.state;
+    const { balance, transactions } = this.state;
+
+    const deposit = transactions.reduce(
+      (acc, item) => (item.type === 'deposit' ? acc + item.amount : acc),
+      0,
+    );
+
+    const withdrow = transactions.reduce(
+      (acc, item) => (item.type === 'withdraw' ? acc + item.amount : acc),
+      0,
+    );
+
     return (
       <div className="Reader">
         <ToastContainer />
